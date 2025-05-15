@@ -44,7 +44,7 @@
                         class="float-animate absolute bottom-0 right-20 w-[20%] drop-shadow-md z-10"
                     />
                     <div
-                        class="gradient rounded-full overflow-hidden flex justify-center items-center w-3/4 mx-auto drop-shadow-md relative -z-1"
+                        class="gradient rounded-2xl overflow-hidden flex justify-center items-center w-3/4 mx-auto drop-shadow-md relative -z-1"
                     >
                         <img
                             src="~/assets/images/hero-img.png"

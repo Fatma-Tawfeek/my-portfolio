@@ -1,11 +1,5 @@
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    transition: all 1s ease;
-}
-
 .gradient {
-    @apply bg-gradient-to-r from-[#42b883] to-[#35495e];
+    @apply bg-gradient-to-l from-[#42b883] to-[#35495e];
 }
 
 .gradient-text {
