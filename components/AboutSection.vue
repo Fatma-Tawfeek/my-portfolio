@@ -1,7 +1,10 @@
 <template>
-    <section id="about" class="py-10 px-5 bg-[#FDFDFD] text-[#333] text-center">
+    <section
+        id="about"
+        class="py-10 px-5 mx-10 rounded-2xl bg-[#FDFDFD] text-[#333] text-center max-w-5xl mx-auto"
+    >
         <h2 class="text-3xl font-bold mb-4">نبذة عني</h2>
-        <p class="max-w-2xl mx-auto text-lg leading-8">
+        <p class="text-lg leading-8">
             مطوّرة واجهات أمامية شغوفة من مصر، متخصصة في <strong>Vue.js</strong> وواجهات المستخدم
             الهادئة والواضحة. بدأت رحلتي في تطوير الويب بحب كبير للتفاصيل، وتحولت بمرور الوقت إلى
             شغف ببناء مواقع فعّالة وناعمة وسهلة الاستخدام. عندي خبرة في التعامل مع

@@ -1,5 +1,5 @@
 <template>
-    <section class="py-10 px-5 text-center">
+    <section class="py-20 px-5 text-center" id="skills">
         <div class="container">
             <h2 class="text-3xl font-bold mb-4">المهارات</h2>
             <Carousel

@@ -3,9 +3,9 @@
         <Menubar :model="items" class="justify-center">
             <template #start> </template>
             <template #item="{ item, props }">
-                <a v-ripple v-bind="props.action">
+                <NuxtLink :to="item.to" v-ripple v-bind="props.action">
                     <span>{{ item.label }}</span>
-                </a>
+                </NuxtLink>
             </template>
             <template #end>
                 <!-- dark mode -->
@@ -22,18 +22,27 @@ const items = ref([
     {
         label: "الرئيسية",
         icon: "pi pi-home",
+        to: "/",
+    },
+    {
+        label: "نبذة عني",
+        icon: "pi pi-user",
+        to: "#about",
     },
     {
         label: "المهارات",
         icon: "pi pi-search",
+        to: "#skills",
     },
     {
         label: "المشاريع",
         icon: "pi pi-users",
+        to: "#projects",
     },
     {
         label: "التواصل",
         icon: "pi pi-users",
+        to: "#contact",
     },
 ]);
 </script>
