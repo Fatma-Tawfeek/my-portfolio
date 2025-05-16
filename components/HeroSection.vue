@@ -1,6 +1,6 @@
 <template>
-    <section class="min-h-dvh">
-        <div class="container mx-auto py-10">
+    <section class="py-10 md:py-20">
+        <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-around items-center gap-5">
                 <!-- text -->
                 <div class="basis-1/2 order-2 md:order-1 text-center md:text-right">

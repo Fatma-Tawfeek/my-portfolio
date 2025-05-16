@@ -2,7 +2,9 @@
     <div class="card dark:text-white">
         <Menubar :model="items">
             <template #start>
-                <img src="/fatma-tawfeek-logo.png" alt="vue" class="w-10" />
+                <NuxtLink to="/">
+                    <img src="/fatma-tawfeek-logo.png" alt="vue" class="w-10" />
+                </NuxtLink>
             </template>
             <template #item="{ item, props }">
                 <NuxtLink :to="item.to" v-ripple v-bind="props.action">
