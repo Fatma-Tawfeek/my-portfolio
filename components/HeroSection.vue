@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="min-h-dvh">
         <div class="container mx-auto py-10">
             <div class="flex flex-col md:flex-row justify-around items-center gap-5">
                 <!-- text -->
@@ -67,7 +67,7 @@
 
 <style scoped>
 .float-animate {
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
     transform: translatey(0px);
 }
 @keyframes float {

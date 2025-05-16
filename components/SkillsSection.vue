@@ -18,6 +18,7 @@
                             :src="`images/${slotProps.data.image}`"
                             :alt="slotProps.data.name"
                             class="h-12 mx-auto"
+                            loading="lazy"
                         />
                     </div>
                 </template>
