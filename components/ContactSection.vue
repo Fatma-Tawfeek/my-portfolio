@@ -10,22 +10,34 @@
         <ul class="flex justify-center gap-4">
             <li>
                 <a href="https://github.com/Fatma-Tawfeek" target="_blank"
-                    ><i class="pi pi-github" style="font-size: 1.5rem"></i
+                    ><i
+                        class="pi pi-github hover:-translate-y-1 ease-in duration-200"
+                        style="font-size: 1.5rem"
+                    ></i
                 ></a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/fatmatawfeek/" target="_blank"
-                    ><i class="pi pi-linkedin" style="font-size: 1.5rem"></i
+                    ><i
+                        class="pi pi-linkedin hover:-translate-y-1 ease-in duration-200"
+                        style="font-size: 1.5rem"
+                    ></i
                 ></a>
             </li>
             <li>
                 <a href="https://wa.me/201017387318" target="_blank"
-                    ><i class="pi pi-whatsapp" style="font-size: 1.5rem"></i
+                    ><i
+                        class="pi pi-whatsapp hover:-translate-y-1 ease-in duration-200"
+                        style="font-size: 1.5rem"
+                    ></i
                 ></a>
             </li>
             <li>
                 <a href="mailto:fatmatawfeek97@gmail.com" target="_blank"
-                    ><i class="pi pi-envelope" style="font-size: 1.5rem"></i
+                    ><i
+                        class="pi pi-envelope hover:-translate-y-1 ease-in duration-200"
+                        style="font-size: 1.5rem"
+                    ></i
                 ></a>
             </li>
         </ul>
