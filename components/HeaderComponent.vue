@@ -1,7 +1,9 @@
 <template>
-    <div class="card">
-        <Menubar :model="items" class="justify-center">
-            <template #start> </template>
+    <div class="card dark:text-white">
+        <Menubar :model="items">
+            <template #start>
+                <img src="/fatma-tawfeek-logo.png" alt="vue" class="w-10" />
+            </template>
             <template #item="{ item, props }">
                 <NuxtLink :to="item.to" v-ripple v-bind="props.action">
                     <span>{{ item.label }}</span>
@@ -51,9 +53,14 @@ const items = ref([
 :deep(.p-menubar) {
     background-color: transparent !important;
     border: none !important;
+    justify-content: space-between !important;
 }
 
 :deep(.p-menubar-item-link) {
     font-size: 20px !important;
+}
+
+:deep(.p-menubar-end:dir(rtl)) {
+    margin-right: 0;
 }
 </style>

@@ -12,3 +12,7 @@ html {
 .btn-primary {
     @apply px-4 py-3 rounded-md gradient hover:bg-gradient-to-l hover:from-[#35495e] hover:to-[#42b883] text-white transition-all ease-in-out duration-300;
 }
+
+.tag {
+    @apply px-2 py-1 rounded-full text-xs shadow-md gradient hover:bg-gradient-to-l hover:from-[#35495e] hover:to-[#42b883] text-white transition-all ease-in-out duration-300;
+}

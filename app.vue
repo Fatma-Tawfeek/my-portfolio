@@ -1,5 +1,5 @@
 <template>
-    <Body class="bg-secondary text-[#464752] font-almarai dark:bg-darkSecondary dark:text-white" />
+    <Body class="bg-secondary text-[#34495e] font-almarai dark:bg-darkSecondary dark:text-white" />
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>

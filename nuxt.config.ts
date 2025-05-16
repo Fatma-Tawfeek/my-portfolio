@@ -18,6 +18,11 @@ export default defineNuxtConfig({
                     rel: "stylesheet",
                     href: "https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap",
                 },
+                {
+                    rel: "icon",
+                    type: "image/x-icon",
+                    href: "/fatma-tawfeek-logo.png",
+                },
             ],
         },
     },

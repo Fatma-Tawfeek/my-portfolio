@@ -54,6 +54,10 @@ const skills = ref([
         image: "bootstrap.png",
     },
     {
+        name: "WordPress",
+        image: "wordpress.png",
+    },
+    {
         name: "Laravel",
         image: "laravel.png",
     },
