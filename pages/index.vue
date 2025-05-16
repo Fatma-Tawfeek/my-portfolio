@@ -10,6 +10,9 @@
 
     <!-- Project Section -->
     <ProjectSection />
+
+    <!-- Contact Section -->
+    <ContactSection />
 </template>
 
 <script setup></script>

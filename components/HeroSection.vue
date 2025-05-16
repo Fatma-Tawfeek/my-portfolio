@@ -28,7 +28,7 @@
                         >
                             تحميل السيرة الذاتية
                         </NuxtLink>
-                        <NuxtLink to="/projects" class="btn-primary"> تواصل معي </NuxtLink>
+                        <NuxtLink to="#contact" class="btn-primary"> تواصل معي </NuxtLink>
                     </div>
                 </div>
                 <!-- image -->

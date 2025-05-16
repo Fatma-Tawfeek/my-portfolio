@@ -3,6 +3,8 @@
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>
+    <!-- Scroll Up Button -->
+    <ScrollUpBtn />
 </template>
 
 <script scoped>
