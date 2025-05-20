@@ -4,19 +4,26 @@ import Aura from "@primeuix/themes/aura";
 export default defineNuxtConfig({
     compatibilityDate: "2024-11-01",
     devtools: { enabled: true },
-    modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module", "@vueuse/nuxt"],
+    modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module", "@vueuse/nuxt", "@nuxtjs/i18n"],
+    i18n: {
+        defaultLocale: "en",
+        locales: [
+            { code: "en", name: "English", file: "en.json", dir: "ltr" },
+            { code: "ar", name: "عربي", file: "ar.json", dir: "rtl" },
+        ],
+    },
     css: ["~/assets/css/main.css"],
     app: {
         head: {
-            title: "Fatma Tawfeek - فاطمة توفيق",
-            htmlAttrs: {
-                lang: "ar",
-                dir: "rtl",
-            },
+            title: "Fatma Tawfeek's Portfolio - فاطمة توفيق",
             link: [
                 {
                     rel: "stylesheet",
                     href: "https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap",
+                },
+                {
+                    rel: "stylesheet",
+                    href: "https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap",
                 },
                 {
                     rel: "icon",
@@ -38,6 +45,7 @@ export default defineNuxtConfig({
                     },
                     fontFamily: {
                         almarai: ["Almarai", "sans-serif"],
+                        inter: ["Outfit", "sans-serif"],
                     },
                 },
                 container: {

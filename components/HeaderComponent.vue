@@ -12,8 +12,14 @@
                 </NuxtLink>
             </template>
             <template #end>
-                <!-- dark mode -->
-                <dark-mode-switch />
+                <div class="flex gap-3">
+                    <!-- dark mode -->
+                    <dark-mode-switch />
+                    <!-- language switch -->
+                    <button @click="switchLocale" class="tag">
+                        {{ switchLocaleName }}
+                    </button>
+                </div>
             </template>
         </Menubar>
     </div>
@@ -21,34 +27,49 @@
 
 <script setup>
 import { ref } from "vue";
+const { locales, setLocale, t, localeProperties } = useI18n();
 
-const items = ref([
-    {
-        label: "الرئيسية",
-        icon: "pi pi-home",
-        to: "/",
-    },
-    {
-        label: "نبذة عني",
-        icon: "pi pi-user",
-        to: "#about",
-    },
-    {
-        label: "المهارات",
-        icon: "pi pi-search",
-        to: "#skills",
-    },
-    {
-        label: "المشاريع",
-        icon: "pi pi-users",
-        to: "#projects",
-    },
-    {
-        label: "التواصل",
-        icon: "pi pi-users",
-        to: "#contact",
-    },
-]);
+// زرار يبدل بين العربية والإنجليزية
+const switchLocale = () => {
+    const newLocale = localeProperties.value.code === "en" ? "ar" : "en";
+    setLocale(newLocale);
+};
+
+// نجيب اسم اللغة التانية (اللي هتظهر في الزر)
+const switchLocaleName = computed(() => {
+    return locales.value.find((l) => l.code !== localeProperties.value.code)?.name;
+});
+const items = ref([]);
+
+watchEffect(() => {
+    items.value = [
+        {
+            label: t("header.home"),
+            icon: "pi pi-home",
+            to: "/",
+        },
+        {
+            label: t("header.about"),
+            icon: "pi pi-user",
+            to: "#about",
+        },
+        {
+            label: t("header.skills"),
+            icon: "pi pi-search",
+            to: "#skills",
+        },
+        {
+            label: t("header.projects"),
+            icon: "pi pi-users",
+            to: "#projects",
+        },
+        {
+            label: t("header.contact"),
+            icon: "pi pi-users",
+            to: "#contact",
+        },
+    ];
+});
 </script>
 
 <style scoped>
@@ -60,9 +81,5 @@ const items = ref([
 
 :deep(.p-menubar-item-link) {
     font-size: 20px !important;
-}
-
-:deep(.p-menubar-end:dir(rtl)) {
-    margin-right: 0;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <section class="py-20 px-5 text-center" id="skills">
         <div class="container">
-            <h2 class="text-3xl font-bold mb-4">المهارات</h2>
+            <h2 class="text-3xl font-bold mb-4">{{ $t("skills.title") }}</h2>
             <Carousel
                 :value="skills"
                 :numVisible="5"
@@ -60,10 +60,6 @@ const skills = ref([
     {
         name: "Laravel",
         image: "laravel.png",
-    },
-    {
-        name: "Firebase",
-        image: "firebase.png",
     },
 ]);
 const responsiveOptions = ref([

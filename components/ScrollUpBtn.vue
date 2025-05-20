@@ -1,7 +1,8 @@
 <template>
     <a
         href="#"
-        class="fixed left-4 bottom-4 opacity-0 gradient shadow-sm inline-block w-10 h-10 flex justify-center items-center rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200"
+        class="fixed bottom-4 opacity-0 gradient shadow-sm inline-block w-10 h-10 flex justify-center items-center rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200"
+        :class="[dir === 'rtl' ? 'left-4' : 'right-4']"
         id="scroll-up"
         ><i class="pi pi-arrow-up" style="color: #fff"></i
     ></a>
@@ -23,6 +24,10 @@ onMounted(() => {
             behavior: "smooth",
         });
     });
+});
+const { localeProperties } = useI18n();
+const dir = computed(() => {
+    return localeProperties.value.dir;
 });
 </script>
 

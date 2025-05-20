@@ -1,11 +1,11 @@
 <template>
     <section class="py-10 px-5 text-center" id="projects">
         <div>
-            <h2 class="text-3xl font-bold mb-8">مشاريعي</h2>
+            <h2 class="text-3xl font-bold mb-8">{{ $t("projects.title") }}</h2>
             <Tabs value="0">
                 <TabList>
                     <div class="flex flex-wrap justify-center items-center gap-5">
-                        <Tab value="0">الكل</Tab>
+                        <Tab value="0">{{ $t("projects.all") }}</Tab>
                         <Tab value="1">Vue.js</Tab>
                         <Tab value="2">Nuxt</Tab>
                         <Tab value="3">Tailwind</Tab>
@@ -17,7 +17,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
                             <!-- start-medation -->
                             <div
-                                class="bg-[#CDE5F5] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#CDE5F5] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -35,7 +35,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -44,10 +44,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">موقع Start Medation</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_start_mediation.title") }}
+                                </h3>
                                 <p>
-                                    موقع تعريفي لمنظمة بريطانية تقدّم حلولًا ودية للنزاعات الأسرية
-                                    والمجتمعية قبل اللجوء إلى المحكمة، مع نماذج للتقديم والتواصل.
+                                    {{ $t("projects.project_start_mediation.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -62,7 +63,7 @@
                             </div>
                             <!-- elhabib-factory -->
                             <div
-                                class="bg-[#EADCF8] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#EADCF8] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -80,7 +81,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -90,11 +91,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    موقع مصنع الحبيب للزجاج والالمونيوم
+                                    {{ $t("projects.project_alhabib_factory.title") }}
                                 </h3>
                                 <p>
-                                    موقع تعريفي لمصنع سعودي متخصص في أعمال الزجاج والألمنيوم، يعرض
-                                    خدماته ومنتجاته ووسائل التواصل.
+                                    {{ $t("projects.project_alhabib_factory.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -113,7 +113,7 @@
                             </div>
                             <!-- social-media-app -->
                             <div
-                                class="bg-[#FAD2D2] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#FAD2D2] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -131,7 +131,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -153,10 +153,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">تطبيق سوشيال ميديا</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_social_media.title") }}
+                                </h3>
                                 <p>
-                                    تطبيق سوشيال ميديا تجريبي، يوفّر خصائص التسجيل والدخول، عرض
-                                    المنشورات، وإمكانية إضافة وتعديل وحذف المنشورات .
+                                    {{ $t("projects.project_social_media.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -175,7 +176,7 @@
                             </div>
                             <!-- burger-resturant -->
                             <div
-                                class="bg-[#DFF6F0] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#DFF6F0] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -193,7 +194,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -215,10 +216,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">صفحة هبوط لمطعم برجر</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_burger_landing.title") }}
+                                </h3>
                                 <p>
-                                    صفحة هبوط لمطعم برجر من تصميمي، تعرض قائمة الطعام، المراجعات،
-                                    العروض الخاصة، ومعلومات التواصل والموقع.
+                                    {{ $t("projects.project_burger_landing.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -229,7 +231,7 @@
                             </div>
                             <!-- msis -->
                             <div
-                                class="bg-[#DFF6F0] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#DFF6F0] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -243,7 +245,7 @@
                                     >
                                         <NuxtLink to="https://msic.sa/" target="_blank" class="tag">
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -253,11 +255,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    موقع مدارس نجمة الالفية العالمية
+                                    {{ $t("projects.project_schools.title") }}
                                 </h3>
                                 <p>
-                                    موقع تعريفي لمدارس دولية بالرياض، يعرض المراحل التعليمية،
-                                    الأنشطة المختلفة، وصور من داخل المدرسة.
+                                    {{ $t("projects.project_schools.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -268,7 +269,7 @@
                             </div>
                             <!-- perfect solution -->
                             <div
-                                class="bg-[#FAD2D2] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#FAD2D2] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -286,7 +287,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -296,11 +297,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    موقع وكالة الحل الأمثل للتسويق
+                                    {{ $t("projects.project_perfect_solution.title") }}
                                 </h3>
                                 <p>
-                                    موقع تعريفي لوكالة تسويق الكتروني سعودية، يعرض خدماتها الإبداعية
-                                    وأعمالها السابقة ووسائل التواصل معها.
+                                    {{ $t("projects.project_perfect_solution.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -315,7 +315,7 @@
                             </div>
                             <!-- ecommerce vue -->
                             <div
-                                class="bg-[#CDE5F5] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#CDE5F5] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -333,7 +333,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -355,10 +355,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">موقع تجارة الكترونية</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_ecommerce.title") }}
+                                </h3>
                                 <p>
-                                    موقع تجارة إلكترونية تجريبي، يحتوي على خصائص التسجيل وتسجيل
-                                    الدخول، وسلّة مشتريات، ودفع إلكتروني، ونظام بحث متقدم.
+                                    {{ $t("projects.project_ecommerce.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -377,7 +378,7 @@
                             </div>
                             <!-- mosques app -->
                             <div
-                                class="bg-[#EADCF8] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#EADCF8] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -395,7 +396,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -405,11 +406,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    صفحة هبوط لتطبيق مساجد
+                                    {{ $t("projects.project_mosques_landing.title") }}
                                 </h3>
                                 <p>
-                                    صفحة هبوط لتطبيق يربط المسلمين بالمساجد في السعودية، ويعرض
-                                    معلومات عنها وخدماتها ويسهّل الوصول إليها.
+                                    {{ $t("projects.project_mosques_landing.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -424,7 +424,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
                             <!-- ecommerce vue -->
                             <div
-                                class="bg-[#CDE5F5] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#CDE5F5] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -442,7 +442,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -464,10 +464,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">موقع تجارة الكترونية</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_ecommerce.title") }}
+                                </h3>
                                 <p>
-                                    موقع تجارة إلكترونية تجريبي، يحتوي على خصائص التسجيل وتسجيل
-                                    الدخول، وسلّة مشتريات، ودفع إلكتروني، ونظام بحث متقدم.
+                                    {{ $t("projects.project_ecommerce.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -490,7 +491,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
                             <!-- elhabib-factory -->
                             <div
-                                class="bg-[#EADCF8] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#EADCF8] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -508,7 +509,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -518,11 +519,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    موقع مصنع الحبيب للزجاج والالمونيوم
+                                    {{ $t("projects.project_alhabib_factory.title") }}
                                 </h3>
                                 <p>
-                                    موقع تعريفي لمصنع سعودي متخصص في أعمال الزجاج والألمنيوم، يعرض
-                                    خدماته ومنتجاته ووسائل التواصل.
+                                    {{ $t("projects.project_alhabib_factory.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -541,7 +541,7 @@
                             </div>
                             <!-- social-media-app -->
                             <div
-                                class="bg-[#FAD2D2] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#FAD2D2] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -559,7 +559,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -581,10 +581,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">تطبيق سوشيال ميديا</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_social_media.title") }}
+                                </h3>
                                 <p>
-                                    تطبيق سوشيال ميديا تجريبي، يوفّر خصائص التسجيل والدخول، عرض
-                                    المنشورات، وإمكانية إضافة وتعديل وحذف المنشورات .
+                                    {{ $t("projects.project_social_media.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -607,7 +608,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
                             <!-- burger-resturant -->
                             <div
-                                class="bg-[#DFF6F0] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#DFF6F0] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -625,7 +626,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -647,10 +648,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">صفحة هبوط لمطعم برجر</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_burger_landing.title") }}
+                                </h3>
                                 <p>
-                                    صفحة هبوط لمطعم برجر من تصميمي، تعرض قائمة الطعام، المراجعات،
-                                    العروض الخاصة، ومعلومات التواصل والموقع.
+                                    {{ $t("projects.project_burger_landing.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -661,7 +663,7 @@
                             </div>
                             <!-- mosques app -->
                             <div
-                                class="bg-[#EADCF8] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#EADCF8] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -679,7 +681,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -689,11 +691,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    صفحة هبوط لتطبيق مساجد
+                                    {{ $t("projects.project_mosques_landing.title") }}
                                 </h3>
                                 <p>
-                                    صفحة هبوط لتطبيق يربط المسلمين بالمساجد في السعودية، ويعرض
-                                    معلومات عنها وخدماتها ويسهّل الوصول إليها.
+                                    {{ $t("projects.project_mosques_landing.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -708,7 +709,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
                             <!-- start-medation -->
                             <div
-                                class="bg-[#CDE5F5] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#CDE5F5] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -726,7 +727,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -735,10 +736,11 @@
                                         </NuxtLink>
                                     </div>
                                 </div>
-                                <h3 class="text-center font-bold text-lg">موقع Start Medation</h3>
+                                <h3 class="text-center font-bold text-lg">
+                                    {{ $t("projects.project_start_mediation.title") }}
+                                </h3>
                                 <p>
-                                    موقع تعريفي لمنظمة بريطانية تقدّم حلولًا ودية للنزاعات الأسرية
-                                    والمجتمعية قبل اللجوء إلى المحكمة، مع نماذج للتقديم والتواصل.
+                                    {{ $t("projects.project_start_mediation.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -753,7 +755,7 @@
                             </div>
                             <!-- msis -->
                             <div
-                                class="bg-[#DFF6F0] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#DFF6F0] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -767,7 +769,7 @@
                                     >
                                         <NuxtLink to="https://msic.sa/" target="_blank" class="tag">
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -777,11 +779,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    موقع مدارس نجمة الالفية العالمية
+                                    {{ $t("projects.project_schools.title") }}
                                 </h3>
                                 <p>
-                                    موقع تعريفي لمدارس دولية بالرياض، يعرض المراحل التعليمية،
-                                    الأنشطة المختلفة، وصور من داخل المدرسة.
+                                    {{ $t("projects.project_schools.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span
@@ -792,7 +793,7 @@
                             </div>
                             <!-- perfect solution -->
                             <div
-                                class="bg-[#FAD2D2] dark:bg-[#353544] text-right rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
+                                class="bg-[#FAD2D2] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
@@ -810,7 +811,7 @@
                                             class="tag"
                                         >
                                             <span>
-                                                الرابط
+                                                {{ $t("projects.link") }}
                                                 <i
                                                     class="pi pi-external-link"
                                                     style="font-size: 0.5rem"
@@ -820,11 +821,10 @@
                                     </div>
                                 </div>
                                 <h3 class="text-center font-bold text-lg">
-                                    موقع وكالة الحل الأمثل للتسويق
+                                    {{ $t("projects.project_perfect_solution.title") }}
                                 </h3>
                                 <p>
-                                    موقع تعريفي لوكالة تسويق الكتروني سعودية، يعرض خدماتها الإبداعية
-                                    وأعمالها السابقة ووسائل التواصل معها.
+                                    {{ $t("projects.project_perfect_solution.description") }}
                                 </p>
                                 <div class="flex gap-3 border-t-[1px] border-gray-400 pt-2 w-full">
                                     <span

@@ -3,22 +3,20 @@
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-around items-center gap-5">
                 <!-- text -->
-                <div class="basis-1/2 order-2 md:order-1 text-center md:text-right">
+                <div class="basis-1/2 order-2 md:order-1 text-center md:text-start">
                     <h1 class="text-4xl font-bold md:text-5xl">
-                        أهلًا وسهلًا، أنا
+                        {{ $t("hero.welcome") }}
                         <span
                             class="gradient bg-clip-text text-transparent font-extrabold text-shadow-md"
-                            >فاطمة توفيق</span
+                            >{{ $t("hero.name") }}</span
                         >
                     </h1>
                     <p class="my-5 text-xl md:text-2xl/relaxed">
-                        مطوّرة واجهات أمامية متخصصة في
-                        <strong class="gradient-text">Vue.js</strong>، و<strong
-                            class="gradient-text"
-                            >Nuxt</strong
-                        >، و<strong class="gradient-text">Tailwind CSS</strong>. أعمل على إنشاء
-                        تطبيقات ويب متجاوبة، سريعة، وسهلة الاستخدام، وأسعى دائمًا لتقديم تجربة
-                        استخدام أنيقة ومريحة للمستخدم.
+                        {{ $t("hero.description") }}
+                        <strong class="gradient-text">Vue.js</strong> ، {{ $t("hero.and") }}
+                        <strong class="gradient-text">Nuxt</strong> ، {{ $t("hero.and") }}
+                        <strong class="gradient-text">Tailwind CSS</strong>
+                        {{ $t("hero.description2") }}
                     </p>
                     <div class="flex gap-3 justify-center md:justify-start items-center">
                         <NuxtLink
@@ -26,9 +24,11 @@
                             target="_blank"
                             class="btn-primary"
                         >
-                            تحميل السيرة الذاتية
+                            {{ $t("hero.btn1") }}<i class="pi pi-download ms-1"></i>
                         </NuxtLink>
-                        <NuxtLink to="#contact" class="btn-primary"> تواصل معي </NuxtLink>
+                        <NuxtLink to="#contact" class="btn-primary">
+                            {{ $t("hero.btn2") }}
+                        </NuxtLink>
                     </div>
                 </div>
                 <!-- image -->

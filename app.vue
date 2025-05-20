@@ -1,5 +1,9 @@
 <template>
-    <Body class="bg-secondary text-[#34495e] font-almarai dark:bg-darkSecondary dark:text-white" />
+    <Body
+        class="bg-secondary text-[#34495e] dark:bg-darkSecondary dark:text-white"
+        :class="[dir === 'rtl' ? 'font-almarai' : 'font-outfit']"
+        :dir="dir"
+    />
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>
@@ -7,6 +11,10 @@
     <ScrollUpBtn />
 </template>
 
-<script scoped>
+<script setup>
 import "primeicons/primeicons.css";
+const { localeProperties } = useI18n();
+const dir = computed(() => {
+    return localeProperties.value.dir;
+});
 </script>

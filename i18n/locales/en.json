@@ -1,0 +1,69 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "welcome": "Hello and welcome, I'm",
+        "name": "Fatma Tawfeek",
+        "description": "I'm a Frontend Developer specialized in",
+        "and": "and",
+        "description2": "I build responsive, fast, and user-friendly web applications, always aiming to deliver a smooth and elegant user experience.",
+        "btn1": "Download CV",
+        "btn2": "Contact me"
+    },
+    "about": {
+        "title": "About me",
+        "description1": "- My name is Fatma, a front-end developer from Egypt. I hold a Bachelor's degree in Computer Science from the Faculty of Science at Suez University, and I graduated in 2020.",
+        "description2": "- I have a strong passion for user interface development and user experience. Over the past few years, I’ve worked on several projects using various technologies like WordPress, Laravel, Vue.js, and Nuxt.",
+        "description3": "- Although I have experience working on different areas of web development, my main focus and greatest interest lies in the front end, where I aim to create elegant, responsive, and user-friendly interfaces.",
+        "description4": "- I believe that good design isn’t just about visual aesthetics, but also about performance, speed, and user experience. I'm always working to improve my skills and keep up with the latest trends in the field."
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "projects": {
+        "title": "Projects",
+        "all": "All",
+        "link": "Link",
+        "project_start_mediation": {
+            "title": "Start Mediation Website",
+            "description": "An informational website for a UK-based organization offering friendly solutions to family and community disputes before going to court. It includes application forms and contact options."
+        },
+        "project_alhabib_factory": {
+            "title": "Al-Habib Glass & Aluminum Factory Website",
+            "description": "An informational website for a Saudi factory specializing in glass and aluminum work. It showcases their services, products, and contact details."
+        },
+        "project_social_media": {
+            "title": "Social Media App",
+            "description": "A demo social media app that features user registration and login, post browsing, and the ability to add, edit, and delete posts."
+        },
+        "project_burger_landing": {
+            "title": "Burger Restaurant Landing Page",
+            "description": "A landing page I designed for a burger restaurant, showcasing the menu, customer reviews, special offers, and contact/location info."
+        },
+        "project_schools": {
+            "title": "Millennial star International Schools Website",
+            "description": "An informational website for international schools in Riyadh. It highlights educational stages, school activities, and features photos from inside the campus."
+        },
+        "project_perfect_solution": {
+            "title": "Perfect Solution Marketing Agency Website",
+            "description": "An informational website for a Saudi digital marketing agency. It displays their creative services, previous work, and ways to get in touch."
+        },
+        "project_ecommerce": {
+            "title": "E-Commerce Website",
+            "description": "A demo e-commerce website featuring user registration and login, a shopping cart, online payment, and an advanced search system."
+        },
+        "project_mosques_landing": {
+            "title": "Mosques App Landing Page",
+            "description": "A landing page for an app that connects Muslims with mosques in Saudi Arabia. It provides mosque info, services, and easy access directions."
+        }
+    },
+    "contact": {
+        "title": "Got a project in mind?",
+        "description": "I’m open to full-time or freelance opportunities — feel free to reach out!"
+    }
+}

@@ -3,9 +3,9 @@
         id="contact"
         class="p-10 m-10 rounded-2xl bg-[#feffff] dark:bg-[#353544] mx-5 md:max-w-5xl md:mx-auto overflow-hidden"
     >
-        <h2 class="text-3xl font-bold text-center">تواصل معي</h2>
+        <h2 class="text-3xl font-bold text-center">{{ $t("contact.title") }}</h2>
         <p class="py-5 text-xl text-center">
-            جاهزة للتعاون سواء بدوام كامل أو كمستقلة — يسعدني تواصلك!
+            {{ $t("contact.description") }}
         </p>
         <ul class="flex justify-center gap-4">
             <li>

@@ -9,28 +9,19 @@
         >
             <img src="~/assets/images/vue.png" alt="vue" class="w-[80%] opacity-20" />
         </div>
-        <h2 class="text-3xl font-bold text-center mb-4">نبذة عني</h2>
+        <h2 class="text-3xl font-bold text-center mb-4">{{ $t("about.title") }}</h2>
         <div class="relative text-lg z-10">
             <p class="mb-3">
-                - اسمي فاطمة، مطوّرة واجهات أمامية من <strong>مصر</strong>، حاصلة على شهادة
-                البكالوريوس في <strong>علوم الحاسب</strong> من
-                <strong>كلية العلوم – جامعة السويس</strong>، وتخرجت في عام <strong>2020</strong>.
+                {{ $t("about.description1") }}
             </p>
             <p class="mb-3">
-                - لدي شغف كبير بتطوير واجهات المستخدم وتجربة الاستخدام، وقد عملت خلال السنوات
-                الماضية على عدد من المشاريع التي استخدمت فيها تقنيات متنوعة مثل
-                <strong>WordPress</strong> و<strong>Laravel</strong> و<strong>Vue.js</strong>
-                و<strong>Nuxt</strong>.
+                {{ $t("about.description2") }}
             </p>
             <p class="mb-3">
-                - ورغم أنني امتلك خبرة في العمل على جوانب متعددة من تطوير المواقع، فإن تركيزي
-                الأساسي واهتمامي الأكبر ينصبّ على مجال <strong>الفرونت إند</strong>، حيث أسعى لتقديم
-                واجهات أنيقة، متجاوبة، وسهلة الاستخدام.
+                {{ $t("about.description3") }}
             </p>
             <p class="mb-3">
-                - أؤمن بأن التصميم الجيد لا يقتصر على الجمال البصري فحسب، بل يشمل أيضًا الأداء،
-                السرعة، وتجربة المستخدم. وأسعى دائمًا إلى تطوير مهاراتي ومواكبة أحدث الاتجاهات في
-                هذا المجال.
+                {{ $t("about.description4") }}
             </p>
         </div>
     </section>
