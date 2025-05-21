@@ -61,13 +61,13 @@
                                     >
                                 </div>
                             </div>
-                            <!-- elhabib-factory -->
+                            <!-- alhabib-factory -->
                             <div
                                 class="bg-[#EADCF8] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
-                                        src="~/assets/images/projects/elhabib-factory.png"
+                                        src="~/assets/images/projects/alhabib-factory.png"
                                         alt="start-medation"
                                         class="w-full h-[150px] rounded-2xl"
                                         loading="lazy"
@@ -76,7 +76,7 @@
                                         class="flex justify-start gap-3 absolute -bottom-8 left-1/2 transform -translate-x-1/2 group-hover:bottom-2 transition-all ease-in-out duration-300"
                                     >
                                         <NuxtLink
-                                            to="https://elhabib-factory.vercel.app/"
+                                            to="https://alhabib-factory.vercel.app/"
                                             target="_blank"
                                             class="tag"
                                         >
@@ -489,13 +489,13 @@
                     </TabPanel>
                     <TabPanel value="2">
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
-                            <!-- elhabib-factory -->
+                            <!-- alhabib-factory -->
                             <div
                                 class="bg-[#EADCF8] dark:bg-[#353544] text-start rounded-2xl p-5 flex flex-col justify-between items-center gap-3 group hover:shadow-lg transition-all ease-in-out duration-300"
                             >
                                 <div class="relative overflow-hidden">
                                     <img
-                                        src="~/assets/images/projects/elhabib-factory.png"
+                                        src="~/assets/images/projects/alhabib-factory.png"
                                         alt="start-medation"
                                         class="w-full h-[150px] rounded-2xl"
                                         loading="lazy"
@@ -504,7 +504,7 @@
                                         class="flex justify-start gap-3 absolute -bottom-8 left-1/2 transform -translate-x-1/2 group-hover:bottom-2 transition-all ease-in-out duration-300"
                                     >
                                         <NuxtLink
-                                            to="https://elhabib-factory.vercel.app/"
+                                            to="https://alhabib-factory.vercel.app/"
                                             target="_blank"
                                             class="tag"
                                         >
